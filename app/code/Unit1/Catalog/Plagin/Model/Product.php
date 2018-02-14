@@ -4,7 +4,7 @@ namespace Unit1\Catalog\Plagin\Model;
 class Product
 {
     /**
-     * Увеличиваем цену в 2 раза
+     * РЈРІРµР»РёС‡РёРІР°РµРј С†РµРЅСѓ РІ 2 СЂР°Р·Р°
      * 
      * @param \Magento\Catalog\Model\Product $product
      * @paran float $price
