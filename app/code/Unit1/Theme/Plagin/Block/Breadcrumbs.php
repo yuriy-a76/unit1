@@ -4,13 +4,13 @@ namespace Unit1\Theme\Plagin\Block;
 class Breadcrumbs
 {
     /**
-     * Μενÿεμ Crumb label
+     * Replase Crumb label
      *
      * @param \Magento\Theme\Block\Html\Breadcrumbs $breadcrumbs
      * @param \Closure $proceed
      * @param string $crumbName
      * @param array $crumbInfo
-     * @return $this
+     * @return $result
      */
     public function aroundAddCrumb(
         \Magento\Theme\Block\Html\Breadcrumbs $breadcrumbs,
@@ -18,7 +18,9 @@ class Breadcrumbs
         $crumbName, 
         $crumbInfo)
     {
+        // add ' ! '
         $crumbInfo["label"] = $crumbInfo["label"] . ' ! ';
+        
         $result = $proceed($crumbName, $crumbInfo);
         return $result;
     }

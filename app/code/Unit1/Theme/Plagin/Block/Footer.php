@@ -4,7 +4,7 @@ namespace Unit1\Theme\Plagin\Block;
 class Footer
 {
     /**
-     * Заменяем copyright
+     * Replase copyright
      * 
      * @param \Magento\Theme\Block\Html\Footer $footer
      * @param string $copyright
